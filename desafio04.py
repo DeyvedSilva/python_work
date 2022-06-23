@@ -1,0 +1,7 @@
+print('='*5, ' DESAFIO 04 ', '='*5)
+algo = input('Digite algo: ')
+print(type(algo))
+print(algo.isalnum())
+print(algo.isalpha())
+print(algo.isalpha())
+print(algo.isdecimal())
