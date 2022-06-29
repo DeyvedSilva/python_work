@@ -1,4 +1,4 @@
-nome = input('Digite seu nome completo: ')
+nome = str(input('Digite seu nome completo: ')).strip()
 print('Nome com letras maiúsculas', nome.upper())
 print('Nome com letras minúsculas', nome.lower())
 print('Total de letras sem espaço', len(nome) - nome.count(' '))
