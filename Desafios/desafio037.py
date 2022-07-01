@@ -5,10 +5,10 @@ escolha = int(input("""Escolha qual será a base de conversão:
    3 para hexadecimal
    """))
 if escolha == 1:
-    print('O número {} convertido em binário é {}.'.format(num, bin(num)))
+    print('O número {} convertido em binário é {}.'.format(num, bin(num)[2:]))
 elif escolha == 2:
-    print('O número {} convertido para octal é {}.'.format(num, oct(num)))
+    print('O número {} convertido para octal é {}.'.format(num, oct(num)[2:]))
 elif escolha == 3:
-    print('O número {} convertido em hexadecimal é {}.'.format(num, hex(num)))
+    print('O número {} convertido em hexadecimal é {}.'.format(num, hex(num)[2:]))
 else:
     print('Opção inválida!')
