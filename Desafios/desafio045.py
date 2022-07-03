@@ -1,10 +1,10 @@
 from time import sleep
-import random
+from random import randint
 print("""Suas opções:
 1 - PEDRA
 2 - PAPEL
 3 - TESOURA""")
-pc = random.randint(1, 3)
+pc = randint(1, 3)
 opcao = int(input('Qual a sua jogada? '))
 print('JO')
 sleep(1)
