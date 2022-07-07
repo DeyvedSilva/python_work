@@ -5,8 +5,10 @@ while True:
     print('VAMOS JOGAR PAR OU ÍMPAR')
     print('-=' * 13)
     num = int(input('Diga um valor: '))
-    palpite = str(input('Par ou ímpar? [P/I] ')).upper()
-    pc = randint(0, 100)
+    palpite = ''
+    while palpite not in 'PI':
+        palpite = str(input('Par ou ímpar? [P/I] ')).strip().upper()[0]
+    pc = randint(0, 10)
     total = num + pc
     print('-' * 40)
     if total % 2 == 0:
