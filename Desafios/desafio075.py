@@ -2,8 +2,7 @@ num1 = int(input('Digite um número: '))
 num2 = int(input('Digite um número: '))
 num3 = int(input('Digite um número: '))
 num4 = int(input('Digite um número: '))
-num5 = int(input('Digite um número: '))
-tupla = (num1, num2, num3, num4, num5)
+tupla = (num1, num2, num3, num4)
 cont = 0
 for c in tupla:
     if c == 9:
