@@ -8,10 +8,10 @@ while True:
     if sair in 'Ss':
         break
 for c in lista:
-    if num % 2 == 0:
-        lista_par.append(num)
+    if c % 2 == 0:
+        lista_par.append(c)
     else:
-        lista_impar.append(num)
+        lista_impar.append(c)
 print('-=' * 30)
 print(f'A lista completa é {lista}')
 print(f'A lista de pares é {lista_par}')
