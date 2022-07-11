@@ -1,5 +1,4 @@
-escola = {}
-escola['Nome'] = str(input('Nome: '))
+escola = {'Nome': str(input('Nome: '))}
 escola['Média'] = float(input(f'Média de {escola["Nome"]}: '))
 if escola['Média'] >= 7:
     escola['Situação'] = 'Aprovado'
