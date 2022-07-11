@@ -1,13 +1,9 @@
 escola = {}
-nome = str(input('Nome: '))
-media = float(input(f'Média de {nome}: '))
-escola['Nome'] = nome
-escola['Média'] = media
-situacao = ' '
-if media >= 7:
-    situacao = 'Aprovado'
+escola['Nome'] = str(input('Nome: '))
+escola['Média'] = float(input(f'Média de {escola["Nome"]}: '))
+if escola['Média'] >= 7:
+    escola['Situação'] = 'Aprovado'
 else:
-    situacao = 'Reprovado'
-escola['Situação'] = situacao
+    escola['Situação'] = 'Reprovado'
 for k, v in escola.items():
     print(f'{k} é igual a {v}')
