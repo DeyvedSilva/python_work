@@ -4,15 +4,15 @@ ano_atual = datetime.today().year
 
 
 def voto(a):
+    global i
     i = ano_atual - a
     if 18 < i < 65:
-        return 'VOTO OBRIGATÓRIO.'
-    elif idade < 16:
-        return 'NÃO VOTA.'
+        return f'Com {i} anos: VOTO OBRIGATÓRIO.'
+    elif i < 16:
+        return f'Com {i} anos: NÃO VOTA.'
     else:
-        return 'VOTO OPCIONAL.'
+        return f'Com {i} anos: VOTO OPCIONAL.'
 
 
 ano = int(input('Em que ano você nasceu? '))
-idade = ano_atual - ano
-print(f'Com {idade} anos: {voto(ano)}')
+print(voto(ano))
