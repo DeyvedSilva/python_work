@@ -1,7 +1,7 @@
 def ficha(n='', g=''):
     if n == '':
         n = '<dsconhecido>'
-    if g == '':
+    if g == '' or not g.isnumeric():
         g = 0
     print(f'O jogador {n} fez {g} gol(s) no campeonato.')
 
