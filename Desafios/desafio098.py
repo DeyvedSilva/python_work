@@ -1,3 +1,6 @@
+from time import sleep
+
+
 def contador(i, f, p):
     print('-=' * 30)
     if p == 0:
@@ -8,11 +11,13 @@ def contador(i, f, p):
     if i > f:
         while i >= f:
             print(f'{i}', end=' ')
+            sleep(0.5)
             i -= p
         print('FIM!')
     elif i < f:
         while i <= f:
             print(f'{i}', end=' ')
+            sleep(0.5)
             i += p
         print('FIM!')
 
