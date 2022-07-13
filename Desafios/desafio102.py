@@ -10,7 +10,7 @@ def fatorial(n, show=False):
         if show:
             print(i, end='')
             if i > 1:
-                print(' x ',end='')
+                print(' x ', end='')
             else:
                 print(' = ', end='')
         f *= i
