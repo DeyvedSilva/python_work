@@ -18,5 +18,7 @@ def notas(*nota, situ=False):
     return dici
 
 
-resp = notas(5.5, 9.5, 10, 6.5, situ=True)
+resp = notas(5.5, 9.5, 10, 6.5)
 print(resp)
+resp1 = notas(9, 8, 7, 8, situ=True)
+print(resp1)
