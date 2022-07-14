@@ -1,20 +1,28 @@
-def aumentar(valor, taxa):
+def aumentar(valor, taxa, formatacao=False):
     novo = valor + (valor * taxa / 100)
+    if formatacao:
+        return moeda(novo)
     return novo
 
 
-def diminuir(valor, taxa):
+def diminuir(valor, taxa, formatacao=False):
     novo = valor - (valor * taxa / 100)
+    if formatacao:
+        return moeda(novo)
     return novo
 
 
-def dobro(valor):
+def dobro(valor, formatacao=False):
     novo = valor * 2
+    if formatacao:
+        return moeda(novo)
     return novo
 
 
-def metade(valor):
+def metade(valor, formatacao=False):
     novo = valor / 2
+    if formatacao:
+        return moeda(novo)
     return novo
 
 
