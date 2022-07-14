@@ -19,5 +19,5 @@ def metade(valor):
 
 
 def moeda(valor):
-    formato = f'R${valor:.2f}'
+    formato = f'R${valor:.0f},00'
     return formato
