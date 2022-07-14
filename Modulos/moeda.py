@@ -17,3 +17,7 @@ def metade(valor):
     novo = valor / 2
     return novo
 
+
+def moeda(valor):
+    formato = f'R${valor:.2f}'
+    return formato
