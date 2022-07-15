@@ -1,25 +1,25 @@
-import Modulos
-from time import sleep
+from Modulos.interface import *
+from Modulos.lib import *
 
 
-def validar_opcao(msg):
+def validar_opcao(msg, arq):
     while True:
         try:
-            Modulos.criar_menu()
+            criar_menu()
             num = int(input(msg))
         except (ValueError, TypeError):
             print('\033[31mERRO: por favor, digite um número inteiro válido.')
-
         except KeyboardInterrupt:
             print('O usuário desistiu')
             break
         else:
             if num == 1:
-                Modulos.menu_ver_cadastro()
+                menu_ver_cadastro()
+                ler_arquivo(arq)
             elif num == 2:
-                Modulos.menu_cadastrar()
+                menu_cadastrar()
             elif num == 3:
-                Modulos.menu_sair()
+                menu_sair()
                 break
             else:
                 print('\033[31mERRO! Digite uma opção válida!\033[m')

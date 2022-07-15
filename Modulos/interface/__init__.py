@@ -18,7 +18,7 @@ def criar_menu():
 
 def menu_ver_cadastro():
     linha()
-    print('Opção 1'.center(60))
+    print('Pessoas cadastradas'.center(60))
     linha()
     sleep(1)
     return
