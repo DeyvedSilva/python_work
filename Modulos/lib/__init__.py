@@ -1,6 +1,3 @@
-from Modulos import *
-
-
 def criar_arquivo(nome):
     try:
         a = open(nome, 'wt+')
@@ -17,7 +14,6 @@ def ler_arquivo(nome):
     except:
         print(f'ERRO! Não foi possível ler o arquivo {nome}')
     else:
-        menu_ver_cadastro()
         print(a.read())
 
 

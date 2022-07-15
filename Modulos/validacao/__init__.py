@@ -16,6 +16,7 @@ def validar_opcao(msg, arq):
             if num == 1:
                 menu_ver_cadastro()
                 ler_arquivo(arq)
+                continue
             elif num == 2:
                 menu_cadastrar()
             elif num == 3:
