@@ -1,4 +1,3 @@
-import Modulos
+from Modulos.validacao import *
 
-Modulos.criar_menu()
-opcao = str(input('\033[33mSua opção:\033[m '))
+validar_opcao('\033[33mSua opção:\033[m ')
