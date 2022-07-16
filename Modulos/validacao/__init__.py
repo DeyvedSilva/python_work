@@ -1,27 +1,36 @@
 from Modulos.interface import *
-from Modulos.lib import *
 
 
-def validar_opcao(msg, arq):
+def validar_opcao(msg):
     while True:
         try:
             criar_menu()
             num = int(input(msg))
         except (ValueError, TypeError):
-            print('\033[31mERRO: por favor, digite um número inteiro válido.')
+            print('\033[31mERRO: por favor, digite um número inteiro válido.\033[m')
         except KeyboardInterrupt:
             print('O usuário desistiu')
             break
         else:
             if num == 1:
-                menu_ver_cadastro()
-                ler_arquivo(arq)
-                continue
+                return 1
             elif num == 2:
-                menu_cadastrar()
+                return 2
             elif num == 3:
-                menu_sair()
-                break
+                return 3
             else:
                 print('\033[31mERRO! Digite uma opção válida!\033[m')
                 continue
+
+
+def validar_inteiro(msg):
+    while True:
+        try:
+            num = int(input(msg))
+        except (ValueError, TypeError):
+            print('\033[31mERRO: por favor, digite um número para idade válido.\033[m')
+        except KeyboardInterrupt:
+            print('O usuário desistiu')
+            return -1
+        else:
+            return num
