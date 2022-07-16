@@ -17,7 +17,7 @@ while True:
         nome = str(input('Nome: '))
         idade = validar_inteiro('Idade: ')
         if idade != -1:
-            salvar_arquivo(arq, [nome, idade])
+            salvar_arquivo(arq, nome, idade)
         opcao = validar_opcao('\033[33mSua opção:\033[m ')
     elif opcao == 3:
         menu_sair()

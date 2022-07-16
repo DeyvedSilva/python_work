@@ -26,7 +26,7 @@ def menu_ver_cadastro():
 
 def menu_cadastrar():
     linha()
-    print('Opção 2'.center(60))
+    print('Novo cadastro'.center(60))
     linha()
     sleep(1)
     return

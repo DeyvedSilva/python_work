@@ -33,4 +33,8 @@ def validar_inteiro(msg):
             print('O usuário desistiu')
             return -1
         else:
-            return num
+            if num < 0:
+                num = abs(num)
+                return num
+            else:
+                return num
