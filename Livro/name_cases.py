@@ -1,3 +1,4 @@
+# exemplifica a utilização de algumas funções de strings
 pessoal = 'Davi'
 print('Alô ' + pessoal + ', você gostaria de aprender um pouco de Python hoje?')
 

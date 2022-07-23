@@ -1,3 +1,4 @@
+# uso de variáveis
 mensagem = 'Hello Python!'
 print(mensagem)
 

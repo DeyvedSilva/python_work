@@ -1,3 +1,4 @@
+# demonstra a utilização de strings
 message = "Hello Python world!"
 print(message)
 
