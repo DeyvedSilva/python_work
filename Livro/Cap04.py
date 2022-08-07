@@ -44,3 +44,17 @@ for i in cubos:
 cubos_c = [valor ** 3 for valor in range(1, 11)]
 for d in cubos_c:
     print(d)
+
+# 4.10
+print('Os três primeiros itens da lista são: ')
+for item in cubos_c[0:3]:
+    print(item)
+
+print('Os três itens do meio da lista são: ')
+meio = len(cubos_c) // 2
+for item in cubos_c[(meio - 1):(meio + 2)]:
+    print(item)
+
+print('Os três últimos itens da lista são: ')
+for item in cubos_c[-3:]:
+    print(item)
