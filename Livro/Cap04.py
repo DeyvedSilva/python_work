@@ -58,3 +58,20 @@ for item in cubos_c[(meio - 1):(meio + 2)]:
 print('Os três últimos itens da lista são: ')
 for item in cubos_c[-3:]:
     print(item)
+
+# 4.11
+friend_pizzas = pizzas_favoritas[:]
+pizzas_favoritas.append('Brigadeiro')
+friend_pizzas.append('Margerita')
+print('Minhas pizzas favoritas são: ')
+for i in pizzas_favoritas:
+    print(i)
+print('As pizzas favoritas de meu amigo são: ')
+for j in friend_pizzas:
+    print(j)
+
+# 4.12
+for item in pizzas_favoritas:
+    print(item)
+for food in pizzas_favoritas:
+    print(food)
