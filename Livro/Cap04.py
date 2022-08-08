@@ -75,3 +75,12 @@ for item in pizzas_favoritas:
     print(item)
 for food in pizzas_favoritas:
     print(food)
+
+# 4.13
+foods = 'feijoada', 'churrasco', 'lasanha', 'pudim', 'escondidinho'
+# foods[1] = 'Tropeiro'
+for food in foods:
+    print(food)
+foods = 'feijoada', 'churrasco', 'lasanha', 'pizza', 'Tropeiro'
+for food in foods:
+    print(food)
