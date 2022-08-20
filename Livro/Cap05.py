@@ -1,4 +1,5 @@
 # exercícios do capítulo 5
+"""
 # 5.1
 var1 = True
 var2: bool = False
@@ -93,3 +94,47 @@ if 'banana' in frutas_favoritas:
     print('Você realmente gosta de bananas!')
 if 'Goiaba' in frutas_favoritas:
     print('Você realmente gosta de Goiabas!')
+
+"""
+# 5.8
+users = ['admin', 'Deyved', 'Davi', 'Jane', 'Giulia']
+for user in users:
+    if user == 'admin':
+        print('Olá admin, gostaria de ver um relatório de status?')
+    else:
+        print(f'Olá {user}, obrigado por fazer login novamente.')
+
+# 5.9
+users.clear()
+if not users:
+    print('Precisamos encontrar alguns usuários!')
+
+# 5.10
+current_users = ['admin', 'Deyved', 'Davi', 'Jane', 'Giulia']
+new_users = ['Laysa', 'Daniel', 'Pedro', 'Flávio', 'JANE']
+for new_user in new_users:
+    if new_user.title() in current_users:
+        print(f'{new_user}, você deve fornecer um novo nome.')
+    else:
+        print(f'O nome {new_user} está disponível.')
+
+# 5.11
+ordinais = list(range(1, 10))
+for ordinal in ordinais:
+    if ordinal == 1:
+        print(f'{ordinal}st', end=' ')
+    elif ordinal == 2:
+        print(f'{ordinal}nd', end=' ')
+    elif ordinal == 3:
+        print(f'{ordinal}rd', end=' ')
+    else:
+        print(f'{ordinal}th', end=' ')
+print()
+
+# 5.12
+# já sigo o padrão da PEP 8 sobre testes condicionais
+
+# 5.13
+"""
+jogos: aviões
+"""
