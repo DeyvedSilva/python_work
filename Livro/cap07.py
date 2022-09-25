@@ -20,21 +20,18 @@ else:
 # 7.4
 prompt = '\nInforme o ingrediente da pizza.'
 prompt += '\n(Para sair digite "quit"): '
-while True:
+while prompt != 'quit':
     ingrediente = input(prompt)
-    if ingrediente == 'quit':
-        break
     print(f'Vamos acrescentar o ingrediente {ingrediente} à pizza.')
 
 # 7.5
-idade = '\nInforme sua idade.'
-idade += '\n"quit" para sair: '
-while True:
-    if idade == 'quit':
-        break
-    if int(idade) < 3:
+messsage = '\nInforme sua messsage.'
+messsage += '\n"quit" para sair: '
+while messsage != 'quit':
+    idade = int(messsage)
+    if idade < 3:
         print('O ingresso será gratuito!')
-    elif int(idade) < 12:
+    elif idade < 12:
         print('O ingresso custará 10 dólares.')
     else:
         print('O ingresso custará 15 dólares.')
