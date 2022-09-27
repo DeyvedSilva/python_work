@@ -16,7 +16,6 @@ if int(num) % 10 == 0:
 else:
     print(f'O número {num} não é multiplo de dez.')
 
-"""
 # 7.4
 prompt = '\nInforme o ingrediente da pizza.'
 prompt += '\n(Para sair digite "quit"): '
@@ -36,4 +35,15 @@ while messsage != 'quit':
     else:
         print('O ingresso custará 15 dólares.')
 
+"""
 # 7.6
+prompt = '\nInforme o ingrediente da pizza: '
+active = 0
+while active <= 8:
+    ingrediente = input(prompt)
+    print(f'Vamos acrescentar o ingrediente {ingrediente} à pizza')
+    active += 1
+
+# 7.7
+while True:
+    print('Isso é um laço infinito')
