@@ -35,7 +35,6 @@ while messsage != 'quit':
     else:
         print('O ingresso custará 15 dólares.')
 
-"""
 # 7.6
 prompt = '\nInforme o ingrediente da pizza: '
 active = 0
@@ -47,3 +46,4 @@ while active <= 8:
 # 7.7
 while True:
     print('Isso é um laço infinito')
+"""
