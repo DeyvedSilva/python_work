@@ -47,3 +47,15 @@ while active <= 8:
 while True:
     print('Isso é um laço infinito')
 """
+# 7.8
+sandwich_orders = ['x-tudo', 'x-bacon', 'x-salada', 'x-especial']
+finished_sandwiches = []
+while sandwich_orders:
+    sandwich = sandwich_orders.pop()
+    print(f'Preparei seu {sandwich}')
+    finished_sandwiches.append(sandwich)
+print('todos os pedidos prontos: ')
+for finished_sandwiche in finished_sandwiches:
+    print(finished_sandwiche)
+
+# 7.9
